@@ -1,0 +1,93 @@
+
+section{
+    margin-bottom: 20px;
+}
+
+#headerNoticia h1{
+    font-family: "Arial Black";
+    font-size: 5rem;
+}
+
+#headerNoticia h5, small{
+    color: darkgray;
+    font-family: Georgia;
+}
+
+.breadcrumb {
+    color: red;
+}
+
+nav{
+    background-color: #1B5481;
+}
+
+
+#imagemNoticia img{
+    max-width: 100%;
+}
+
+#contentNoticia p{
+    font-family: SansSerif;
+    font-size: 16pt;
+    text-align: justify;
+}
+
+.nav-sidebar{
+    background-color: cadetblue;
+}
+.nav-sidebar li{
+    border: 1px solid lightgray;
+}
+.nav-sidebar i,a{
+    color:#f9f2f4;
+}
+
+.page-header h1{
+    font-family: "Angsana New";
+    color: #1B5481;
+}
+.contentDashboard th {
+    text-align: center;
+}
+.contentDashboard td {
+    text-align: center;
+}
+.contentDashboard h2 {
+    text-align: center;
+    color:indianred;
+    font-family: SansSerif;
+}
+
+.icon-big{
+    font-size: 25px;
+}
+
+.icon-warning{
+    color: orange;
+}
+
+.icon-danger{
+    color:red;
+}
+.icon-success{
+    color: lightblue;
+}
+.icon-primary{
+    color: #1b6d85;
+}
+
+.default{
+    color: #1B5481;
+}
+
+.primary{
+    color: #F8981D;
+}
+
+.secondary{
+    color: #01539B;
+}
+
+.light{
+    color: #92B3D0;
+}
