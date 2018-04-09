@@ -66,7 +66,14 @@
                     <tbody>
                         <tr>
                             <td class="text-center">{{$curso->nome}}</td>
-                            <td class="text-center">{{$curso->professor->nome}}</td>
+                            <td class="text-center">
+                                @if($curso->professor)
+                                    {{$curso->professor->nome}}
+                                    @else
+                                    Sem Professor
+                                @endif
+
+                            </td>
                         </tr>
                     </tbody>
                 @endforeach

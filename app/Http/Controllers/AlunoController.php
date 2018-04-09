@@ -58,9 +58,9 @@ class AlunoController extends Controller
         ], 200);
     }
 
-    public function getCPF($cpf)
+    public function getCPF(Request $request)
     {
-        $data = $this->aluno->where('cpf', $cpf)->with('cursos')->first();
+        $data = $this->aluno->where('cpf', $request->input('cpf'))->with('cursos')->first();
 
         if (!$data) {
             return Response()->json([

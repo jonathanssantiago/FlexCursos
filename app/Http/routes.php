@@ -32,7 +32,7 @@ Route::group(['prefix' => 'dashboard'], function (){
 Route::group(['prefix' => 'api'], function () {
 
     Route::group(['prefix' => 'aluno'], function (){
-        Route::get('cpf/{cpf}', ['as' => 'aluno.cpf', 'uses' => 'AlunoController@getCPF']);
+        Route::post('cpf', ['as' => 'aluno.cpf', 'uses' => 'AlunoController@getCPF']);
         Route::get('list', ['as' => 'aluno.list', 'uses' => 'AlunoController@list']);
         Route::post('store', ['as' => 'aluno.store', 'uses' => 'AlunoController@store']);
         Route::put('curso', ['as' => 'aluno.curso.update', 'uses' => 'AlunoController@updateCurso']);
