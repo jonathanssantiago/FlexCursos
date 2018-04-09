@@ -72,8 +72,8 @@
                 listCurso.append('<h4>'+ response.msg +'</h4>');
 
                 $.each(cursos, function (key, value) {
-                    listCurso.append('<div class="col-sm-6 col-md-3"><div class="thumbnail"><img src="{{url('image/cursos.png')}}" alt="Cursos"><div class="caption"><h3>'+ value.nome +'</h3><h5></h5><p id="textDescricao">' + value.descricao + '</p><p class="text-center"><a href=../../curso/show/'+value.id +' class="btn btn-success" role="button">Ver Mais</a></p></div></div></div>');
-                    $('#textDescricao').text($('#textDescricao').text().substring(0,100)).append('...');
+                    listCurso.append('<div class="col-sm-6 col-md-3"><div class="thumbnail"><img src="{{url('image/cursos.png')}}" alt="Cursos"><div class="caption"><h3>'+ value.nome +'</h3><h5></h5><p id="textDescricao'+ value.id +'">' + value.descricao + '</p><p class="text-center"><a href=../../curso/show/'+value.id +' class="btn btn-success" role="button">Ver Mais</a></p></div></div></div>');
+                    $('#textDescricao'+value.id).text($('#textDescricao'+value.id).text().substring(0,100)).append('...');
                 });
             });
             resposta.error(function (response) {
