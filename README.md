@@ -16,7 +16,7 @@ Sistema de Inscrição em Cursos
 ## CONFIGURAÇÃO
 
     Todas as configurações do projeto esta no arquivo .env, você deve alterar os dados do Banco de dados nele;
-    o banco de dados esta na pasta database o arquivo "flexkpeak.sql" exporte para o seu SGBD.
+    o banco de dados esta na pasta database o arquivo "flexpeak.sql" exporte para o seu SGBD.
     
     Você deve alterar as seguintes variavéis de ambiente de acordo com o seu ambiente:
    
